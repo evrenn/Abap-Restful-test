@@ -1,0 +1,17 @@
+managed implementation in class zbp_emp_dtls_ddl unique;
+
+define behavior for ZEMP_DTLS_DDL //alias <alias_name>
+persistent table ZEMP_DTLS_ET1
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+
+field(mandatory) zempname;
+  create;
+  update;
+  delete;
+
+validation valifateCountry on save { field zcountry; }
+
+}

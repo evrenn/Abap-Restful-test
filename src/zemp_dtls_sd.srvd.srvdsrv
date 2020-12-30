@@ -1,0 +1,4 @@
+@EndUserText.label: 'Emp Dtls service Definition'
+define service Zemp_dtls_sd {
+  expose ZEMP_DTLS_DDL;
+}

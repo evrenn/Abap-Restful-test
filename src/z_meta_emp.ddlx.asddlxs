@@ -1,0 +1,34 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { typeName: 'Employee Detail',
+                  typeNamePlural: 'Employee Details',
+                  title.value: 'zempid',
+                  title.criticality: 'zempdesg'
+                  }
+
+annotate view Z_I_EMP_DTLS with
+{
+  @UI.facet: [{ id : 'zempid',
+                type: #IDENTIFICATION_REFERENCE,
+                label: 'Employeee Details'
+             }]
+  @UI.lineItem: [{position: 10, label: 'Employee ID'}]
+  @UI.identification: [{ position: 10, label: 'Employee ID' }]
+  zempid;
+  @UI.lineItem: [{position: 20, label: 'Employee Name'}]
+  @UI.identification: [{ position: 20, label: 'Employee Name' }]
+  zempname;
+  @UI.lineItem: [{position: 30, label: 'Employee Designation'}]
+  @UI.identification: [{ position: 30, label: 'Employeee Designation' }]
+  zempdesg;
+  @UI.lineItem: [{position: 40, label: 'Employee Gender'}]
+  @UI.identification: [{ position: 40, label: 'Employee Gender' }]
+  zgender;
+  @UI.lineItem: [{position: 50, label: 'Employee Salary'}]
+  @UI.identification: [{ position: 50, label: 'Employee Salary' }]
+  zsalary;
+  @UI.lineItem: [{position: 60, label: 'Salary Currency'}]
+  @UI.identification: [{ position: 60, label: 'Salary Currency' }]
+
+  zcurrency_key;
+
+}

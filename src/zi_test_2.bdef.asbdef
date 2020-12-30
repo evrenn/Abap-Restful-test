@@ -1,0 +1,11 @@
+managed implementation in class zbp_i_test_2 unique;
+
+define behavior for ZI_test_2 alias test2
+persistent table zett_1
+etag master city
+lock master
+{
+  create;
+  update;
+  delete;
+}

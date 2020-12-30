@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Z_I_EMP_DTLS'
+define service Z_I_EMP_DTLS_SD {
+  expose Z_I_EMP_DTLS;
+}

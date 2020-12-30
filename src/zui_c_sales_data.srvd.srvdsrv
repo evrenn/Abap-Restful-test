@@ -1,0 +1,5 @@
+@EndUserText.label: 'Sales Order Data'
+define service Zui_c_sales_data {
+  expose zc_sales_masterx;
+  expose I_Currency;
+}

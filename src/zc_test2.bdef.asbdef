@@ -1,0 +1,9 @@
+projection;
+
+define behavior for ZC_Test2 alias test2_processor
+use etag
+{
+  use create;
+  use update;
+  use delete;
+}

@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_emply_dtls unique;
+
+define behavior for Z_I_EMP_DTLS //alias <alias_name>
+persistent table zemp_dtls
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  validation validateEmpID on save { field zempid; }
+  create;
+  update;
+  delete;
+}

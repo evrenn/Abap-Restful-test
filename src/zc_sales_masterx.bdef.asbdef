@@ -1,0 +1,15 @@
+managed implementation in class zcl_my_sales unique;
+
+define behavior for zc_sales_masterx
+
+persistent table zsales_master
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+field( readonly ) customer_name;
+  create;
+  update;
+  delete;
+  action setComplete result [1] $self;
+}
